@@ -4,25 +4,105 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      *,
+      ::before,
+      ::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: sans-serif;
+      }
+
+      main {
+        width: min(95%, 1200px);
+        margin: 2em auto;
+      }
+
+      h1 {
+        font-size: 3rem;
+        margin: 0.5em 0;
+        text-align: center;
+      }
+
+      h3 {
+        text-align: center;
+        font-size: 1.15rem;
+        font-weight: 400;
+        color: #696969;
+        font-style: italic;
+      }
+
+      p {
+        margin: 1em 0;
+        font-size: 1.05rem;
+        line-height: 1.5;
+      }
+
+      .container {
+        display: flex;
+        justify-content: space-around;
+      }
+
+      figure {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1em;
+        font-size: 1.15rem;
+      }
+
+      img {
+        width: 80%;
+        height: auto;
+      }
+
+      @media (max-width: 576px) {
+        .container {
+          flex-direction: column;
+        }
+      }
+    </style>
     <title>Document</title>
   </head>
   <body>
-    <h1>The Band</h1>
-    <h3>We love music</h3>
-    <p>
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati eum
-      harum ea asperiores vitae corrupti animi excepturi, dicta atque fuga
-      tempore tempora dolor molestiae possimus quaerat nemo magni consequuntur.
-      Perferendis! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad
-      qui natus molestias dicta iure. Ipsam voluptate perferendis corrupti minus
-      optio commodi culpa doloribus. Tempora laudantium dignissimos animi
-      quaerat, nihil nesciunt! Itaque impedit blanditiis laborum voluptates nemo
-      sit doloremque, rerum, alias dolore nostrum obcaecati optio consequuntur
-      eius nam vero ea exercitationem. Itaque quam non enim. Beatae nesciunt
-      dolor provident qui nulla. Molestias aspernatur odit magni. Optio nam
-      officia repellat, id unde possimus, assumenda odio eveniet sunt quidem
-      placeat, quo dolores adipisci? Ab ullam ratione alias labore minus
-      tempora? Suscipit, dolorem sint.
-    </p>
+    <main>
+      <h1>The Band</h1>
+      <h3>We love music</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati eum
+        harum ea asperiores vitae corrupti animi excepturi, dicta atque fuga
+        tempore tempora dolor molestiae possimus quaerat nemo magni
+        consequuntur. Perferendis! Lorem ipsum dolor sit, amet consectetur
+        adipisicing elit. Ad qui natus molestias dicta iure. Ipsam voluptate
+        perferendis corrupti minus optio commodi culpa doloribus. Tempora
+        laudantium dignissimos animi quaerat, nihil nesciunt! Itaque impedit
+        blanditiis laborum voluptates nemo sit doloremque, rerum, alias dolore
+        nostrum obcaecati optio consequuntur eius nam vero ea exercitationem.
+        Itaque quam non enim. Beatae nesciunt dolor provident qui nulla.
+        Molestias aspernatur odit magni. Optio nam officia repellat, id unde
+        possimus, assumenda odio eveniet sunt quidem placeat, quo dolores
+        adipisci? Ab ullam ratione alias labore minus tempora? Suscipit, dolorem
+        sint.
+      </p>
+
+      <section class="container">
+        <figure>
+          <figcaption>Name</figcaption>
+          <img src="/assets/elephant.png" alt="elephant image" />
+        </figure>
+        <figure>
+          <figcaption>Name</figcaption>
+          <img src="/assets/elephant.png" alt="elephant image" />
+        </figure>
+        <figure>
+          <figcaption>Name</figcaption>
+          <img src="/assets/elephant.png" alt="elephant image" />
+        </figure>
+      </section>
+    </main>
   </body>
 </html>
